@@ -69,3 +69,25 @@
 .spotify-embed iframe{border:0;border-radius:8px}
 @media(max-width:820px){.contact-layout{grid-template-columns:1fr}.contact-image{max-width:620px;aspect-ratio:5/4}.home-feature{min-height:0}}
 @media(max-width:600px){.home-feature{padding-top:54px}.home-copy h1{font-size:62px}.contact-page{padding:52px 24px 75px}.contact-panel h1{margin-bottom:24px}.contact-social{margin-top:33px}.contact-image{aspect-ratio:4/5}.release-info{min-height:72px}}
+
+/* Editorial home, score fragments and compact contact */
+.home-copy{max-width:500px}
+.home-statement{max-width:315px;margin-top:36px;padding-left:18px;border-left:1px solid #dce2e565}
+.home-statement p{font-size:13px;line-height:1.75;color:#b8c5cb;margin:0}
+.score-decoration{max-width:1220px;height:185px;margin:-16px auto 62px;display:grid;grid-template-columns:1fr 1fr;gap:18px;overflow:hidden;opacity:.64;mix-blend-mode:multiply}
+.score-decoration img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:grayscale(1) contrast(.9)}
+.score-decoration img:nth-child(2){object-position:center 31%}
+.release-card{position:relative}
+.release-info{padding-right:52px}
+.release-play{top:11px;width:36px;height:36px;border:0;background:#152e3d;color:#dce2e5;box-shadow:0 2px 8px #0a1b2a24;transition:background .18s,transform .18s}
+.release-play:hover{background:#34536a;color:#fff;transform:scale(1.07)}
+.release-play[aria-pressed="true"]{background:#34536a}
+.release-play[aria-pressed="true"] svg path{d:path('M5 4h3v12H5zm7 0h3v12h-3z')}
+.spotify-embed,.spotify-embed.is-open{position:absolute;top:0;left:0;width:300px;height:152px;opacity:0;pointer-events:none;visibility:visible;overflow:hidden;margin:0;z-index:-1}
+.contact-page{padding:45px 24px 85px}
+.contact-layout{width:min(100%,520px);display:flex;flex-direction:column;gap:28px;align-items:stretch}
+.contact-image{width:100%;aspect-ratio:4/3;max-width:none}
+.contact-panel h1{font-size:clamp(27px,3vw,34px);letter-spacing:-.025em;margin:0 0 12px;text-transform:none}
+.contact-email{font-size:14px;letter-spacing:.015em}
+.contact-social{margin-top:25px;gap:26px}
+@media(max-width:600px){.home-statement{margin-top:28px}.score-decoration{height:130px;margin:0 auto 38px;gap:10px}.contact-layout{gap:24px}.contact-image{aspect-ratio:4/3}.contact-panel h1{font-size:28px}.contact-email{font-size:13px}}

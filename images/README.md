@@ -13,3 +13,5 @@ The six release covers (`flower.jpg`, `nagori.jpg`, `dream-book.jpg`, `lycaenida
 - `portrait-home.jpg` — formal portrait on Home
 - `portrait-contact.jpg` — formal portrait on Contact
 - `portrait-about.jpg` — casual photograph on About
+
+- `personal-statement-score.png` — the score page beside the home page personal statement

@@ -2,7 +2,7 @@
 
 Edit these files directly in this repository; each commit updates this version.
 
-- `index.html` — landing page. Replace `images/portrait-home.jpg` to change the formal portrait.
+- `index.html` — landing page. Replace `images/portrait-home.jpg` to change the formal portrait. The paragraph under “Personal statement” is a replacement prompt; edit it with your own words. `images/personal-statement-score.png` is the score displayed beside it.
 - `contact.html` — email, Instagram, Spotify, Apple Music, YouTube Music and score images.
 - `about.html` — biography and `images/portrait-about.jpg` casual photograph.
 - `film.html` — each film is one `<article class="film-card">` block. Copy it to add a project, then replace title, year, director, music credit, image path and alt text. Put the corresponding still in `images/`. To link the still, change the image container `<div>` to an `<a href="YOUR_URL">` and its closing tag to `</a>`.

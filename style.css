@@ -197,3 +197,5 @@ body{color:var(--gray)}
 @media(max-width:850px){.contact-layout{grid-template-columns:1fr;max-width:520px;gap:55px}.contact-landscape{width:min(100%,410px);justify-self:start}}
 
 .personal-copy>p:last-child{font-size:clamp(17px,1.7vw,22px);line-height:1.52}
+
+.contact-panel h1{font-family:'Archivo',Arial,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:-.045em;line-height:1.08}

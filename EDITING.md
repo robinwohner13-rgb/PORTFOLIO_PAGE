@@ -2,8 +2,8 @@
 
 Edit these files directly in this repository; each commit updates this version.
 
-- `index.html` — landing page. Replace `images/home.jpg` with your photograph.
-- `contact.html` — email, Spotify, Instagram and `images/contact.jpg` placeholder.
+- `index.html` — landing page. Replace `images/score-detail-02.png` to change the displayed score.
+- `contact.html` — email, Spotify, Instagram and your `images/landscape.jpg` photograph.
 - `about.html` — biography and `images/about.jpg` placeholder.
 - `film.html` — each film is one `<article class="film-card">` block. Copy it to add a project, then replace title, year, director, music credit, image path and alt text. Put the corresponding still in `images/`. To link the still, change the image container `<div>` to an `<a href="YOUR_URL">` and its closing tag to `</a>`.
 - `music.html` — six Spotify releases. For a new release, copy a card and update the album URL, cover filename, title, month and year, release type, track count, and `data-spotify-uri="spotify:album:ALBUM_ID"`. The small play button is controlled by `music.js`. Spotify controls the stream and may require a signed-in listener or a second interaction. Its iframe API does not guarantee a chosen start time within a music track. For precise excerpts, add authorized audio files and a dedicated local player.

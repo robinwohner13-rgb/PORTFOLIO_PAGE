@@ -150,3 +150,23 @@ body{color:var(--gray)}
 .contact-layout{width:min(100%,430px);gap:0}
 .contact-panel{padding:0}
 @media(max-width:600px){.contact-page{min-height:calc(100svh - 190px);padding:85px 28px 110px}}
+
+/* Cool silver and dark blue */
+:root{--paper:#c8cfd2;--gray:#d9dfe1;--muted:#aebbc3;--ink:#152a39}
+.release-cover{background:#b8c3c8}
+.release-play{color:var(--gray)}
+.contact-page{display:block;min-height:calc(100svh - 160px);padding:clamp(75px,9vw,140px) clamp(28px,7vw,110px) clamp(105px,11vw,170px)}
+.contact-layout{width:min(100%,1120px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(70px,10vw,160px);align-items:center}
+.contact-panel{max-width:400px}
+.contact-panel h1{font-size:clamp(33px,3.4vw,45px);font-weight:500;letter-spacing:-.035em;margin:0 0 48px}
+.contact-label{margin:0 0 8px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.contact-email{font-size:clamp(15px,1.4vw,18px);letter-spacing:0}
+.contact-social{display:grid;grid-template-columns:repeat(2,max-content);gap:20px 34px;margin-top:58px}
+.contact-social a{font-size:10px;letter-spacing:.09em;white-space:nowrap}
+.contact-social svg{width:15px;height:15px;flex:none}
+.contact-scores{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(15px,2.5vw,34px)}
+.contact-scores figure{margin:0;background:var(--paper);padding:12px;aspect-ratio:3/4;overflow:hidden;box-shadow:0 15px 32px #030d1740}
+.contact-scores figure:nth-child(2){transform:translateY(48px)}
+.contact-scores img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(.83);mix-blend-mode:multiply}
+@media(max-width:850px){.contact-layout{grid-template-columns:1fr;gap:65px;max-width:590px}.contact-scores{max-width:520px}.contact-panel h1{margin-bottom:38px}}
+@media(max-width:600px){.contact-page{padding:68px 28px 125px}.contact-layout{gap:56px}.contact-social{gap:18px 25px;margin-top:42px}.contact-scores{gap:14px}.contact-scores figure{padding:8px}.contact-scores figure:nth-child(2){transform:translateY(25px)}}

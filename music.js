@@ -1,8 +1,13 @@
 // Spotify's documented iframe controller supports play, but track seeking is not guaranteed.
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  const station = document.createElement('div');
+  station.className = 'spotify-player-station';
+  station.setAttribute('aria-hidden', 'true');
+  document.body.append(station);
   document.querySelectorAll('.release-card').forEach(card => {
     const button = card.querySelector('.release-play');
-    const host = card.querySelector('.spotify-embed');
+    const host = document.createElement('div');
+    station.append(host);
     IFrameAPI.createController(host, {uri: card.dataset.spotifyUri, width: '100%', height: 152}, controller => {
       button.addEventListener('click', () => {
         const open = button.getAttribute('aria-pressed') === 'true';

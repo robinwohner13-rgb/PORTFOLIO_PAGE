@@ -1,1 +1,73 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Robin — composer, pianist and producer. Film scores and personal music."><title>Film scores — Robin</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><a class="wordmark" href="index.html" aria-label="Robin, home">R<span>O</span>BIN</a><nav aria-label="Main navigation"><a href="index.html" >Home</a><a href="film.html" aria-current="page">Film</a><a href="discography.html" >Discography</a><a href="about.html" >About</a><a href="contact.html" >Contact</a></nav></header><main class="interior"><section class="page-intro"><p class="overline">01 / Moving image</p><h1>Film<span class="italic"> scores</span></h1></section><section class="archive" aria-label="Film score projects"><div class="archive-top"><span>Selected projects</span></div><div class="project-row"><div class="project-image media-slot"><img src="images/film-01.jpg" alt="Film still" onerror="this.hidden=true"><span>FILM STILL / POSTER</span></div><div class="project-copy"><span class="number">01 / Score</span><h2>Film title</h2><p>Director · Year · Music credit</p><p class="placeholder">Add a film clip, cue, or project link</p></div></div><div class="project-row"><div class="project-image media-slot"><img src="images/film-02.jpg" alt="Film still" onerror="this.hidden=true"><span>FILM STILL / POSTER</span></div><div class="project-copy"><span class="number">02 / Score</span><h2>Film title</h2><p>Director · Year · Music credit</p><p class="placeholder">Add a film clip, cue, or project link</p></div></div></section></main><footer class="site-footer"><span>Robin / Composer · Pianist · Producer</span><span>© 2026</span></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Film scores by Robin, composer and pianist.">
+  <title>Film Scores — Robin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Robin, home">R<span>O</span>BIN</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="film.html" aria-current="page">Film</a>
+      <a href="discography.html">Discography</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="film-page">
+    <div class="film-heading"><p class="overline">01 / Moving image</p><h1>Film Scores</h1></div>
+    <section class="film-grid" aria-label="Film score projects">
+      <!-- Duplicate one article for each real project. Keep image and audio filenames in sync with files you add. -->
+      <article class="film-card">
+        <div class="film-art media-slot">
+          <img src="images/film-01.jpg" alt="Film title poster or still" onerror="this.hidden=true">
+          <span>FILM STILL / POSTER</span>
+        </div>
+        <div class="film-details">
+          <h2>Film title</h2>
+          <p class="film-year">Year</p>
+          <p>Director: Name</p>
+          <p>Music: Robin</p>
+          <div class="score-player">
+            <span>Score excerpt</span>
+            <audio controls preload="none" aria-label="Play score excerpt for Film title">
+              <source src="audio/film-01.mp3" type="audio/mpeg">
+              Your browser does not support audio playback.
+            </audio>
+          </div>
+        </div>
+      </article>
+
+      <article class="film-card">
+        <div class="film-art media-slot">
+          <img src="images/film-02.jpg" alt="Film title poster or still" onerror="this.hidden=true">
+          <span>FILM STILL / POSTER</span>
+        </div>
+        <div class="film-details">
+          <h2>Film title</h2>
+          <p class="film-year">Year</p>
+          <p>Director: Name</p>
+          <p>Music: Robin</p>
+          <div class="score-player">
+            <span>Score excerpt</span>
+            <audio controls preload="none" aria-label="Play score excerpt for Film title">
+              <source src="audio/film-02.mp3" type="audio/mpeg">
+              Your browser does not support audio playback.
+            </audio>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Robin / Composer · Pianist · Producer</span><span>© 2026</span></footer>
+</body>
+</html>

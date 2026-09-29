@@ -199,3 +199,8 @@ body{color:var(--gray)}
 .personal-copy>p:last-child{font-size:clamp(17px,1.7vw,22px);line-height:1.52}
 
 .contact-panel h1{font-family:'Archivo',Arial,sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:-.045em;line-height:1.08}
+
+/* Slightly larger release artwork */
+.release-card{grid-template-columns:225px minmax(0,1fr)}
+.release-cover{width:225px}
+@media(max-width:600px){.release-card{grid-template-columns:126px minmax(0,1fr)}.release-cover{width:126px}}

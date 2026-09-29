@@ -7,7 +7,7 @@
   <title>Film Scores — Robin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
   </header>
 
   <main class="film-page">
-    <div class="film-heading"><p class="overline">01 / Moving image</p><h1>Film Scores</h1></div>
+    <div class="film-heading"><h1>Film Scores</h1></div>
     <section class="film-grid" aria-label="Film score projects">
       <!-- Duplicate one article for each real project. Keep image and audio filenames in sync with files you add. -->
       <article class="film-card">
@@ -36,13 +36,13 @@
           <p class="film-year">Year</p>
           <p>Director: Name</p>
           <p>Music: Robin</p>
-          <div class="score-player">
-            <span>Score excerpt</span>
+          <details class="score-listen">
+            <summary>Listen to score</summary>
             <audio controls preload="none" aria-label="Play score excerpt for Film title">
               <source src="audio/film-01.mp3" type="audio/mpeg">
               Your browser does not support audio playback.
             </audio>
-          </div>
+          </details>
         </div>
       </article>
 
@@ -56,13 +56,13 @@
           <p class="film-year">Year</p>
           <p>Director: Name</p>
           <p>Music: Robin</p>
-          <div class="score-player">
-            <span>Score excerpt</span>
+          <details class="score-listen">
+            <summary>Listen to score</summary>
             <audio controls preload="none" aria-label="Play score excerpt for Film title">
               <source src="audio/film-02.mp3" type="audio/mpeg">
               Your browser does not support audio playback.
             </audio>
-          </div>
+          </details>
         </div>
       </article>
     </section>

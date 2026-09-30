@@ -275,3 +275,19 @@ body{color:var(--gray)}
 .release-player iframe{height:80px;border-radius:6px}
 .release-player a{font-size:10px;margin-top:7px;color:var(--muted);text-decoration:none}
 .release-player a:hover{text-decoration:underline}
+
+/* Balanced home introduction and restrained footer. */
+.home-feature{max-width:1180px;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(45px,6vw,85px);padding:clamp(65px,7vw,95px) clamp(28px,5vw,60px);min-height:0;align-items:start}
+.home-copy{max-width:500px;align-self:start;padding-top:10px}
+.home-copy .overline{font-size:10px;letter-spacing:.13em;margin:0 0 25px}
+.home-copy h1{font-size:clamp(52px,5.2vw,74px);line-height:1.04;letter-spacing:-.035em;margin:0}
+.home-statement{max-width:450px;margin-top:30px}
+.home-statement p{font-size:14px;line-height:1.8;margin-bottom:18px}
+.home-portrait{width:100%;max-width:380px;justify-self:end}
+.site-footer{justify-content:flex-end;padding:22px clamp(28px,5vw,80px);font-size:10px;letter-spacing:.02em;text-transform:none;border-top:1px solid #dce2e51f}
+.contact-landscape{aspect-ratio:auto;overflow:visible}
+.contact-landscape img{height:auto;aspect-ratio:4/5;object-fit:cover}
+.contact-landscape figcaption{font-family:'Archivo',Arial,sans-serif;font-size:10px;line-height:1.5;color:var(--muted);letter-spacing:.02em;margin-top:12px}
+@media(max-width:850px){.contact-landscape img{aspect-ratio:4/3}}
+@media(max-width:700px){.home-feature{grid-template-columns:1fr;gap:35px;padding:50px 28px 65px}.home-copy{padding-top:0;max-width:520px}.home-copy h1{font-size:58px}.home-statement{max-width:520px}.home-portrait{justify-self:start;max-width:380px}.site-footer{padding:20px 28px}}
+@media(max-width:480px){.contact-landscape img{aspect-ratio:1}}

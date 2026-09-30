@@ -217,3 +217,7 @@ body{color:var(--gray)}
 .music-introduction-photo{height:auto;aspect-ratio:3/4}
 .music-introduction-photo img{height:100%;object-fit:cover;object-position:55% center}
 .discography-heading h2{font-size:clamp(36px,4.4vw,64px);font-weight:600;letter-spacing:-.045em;text-transform:uppercase;line-height:1.08;margin:0}
+
+/* Centered Discography photograph, preserving its original ratio. */
+.discography-image-header{background:var(--blue);padding:clamp(40px,6vw,85px) clamp(24px,6vw,95px);display:flex;justify-content:center}
+.discography-image-header img{display:block;width:min(100%,1220px);height:auto;aspect-ratio:2048/1088;object-fit:contain}

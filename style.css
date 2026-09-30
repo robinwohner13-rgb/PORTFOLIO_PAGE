@@ -231,3 +231,23 @@ body{color:var(--gray)}
 .release-player iframe{display:block;width:100%;height:152px;border:0;border-radius:12px}
 .release-player a{display:inline-block;margin-top:10px;font-size:12px;text-decoration:underline}
 .release-play[aria-expanded="true"] svg{transform:rotate(90deg)}
+
+/* Contact: stronger hierarchy and a compact editorial layout. */
+.contact-page{padding:clamp(55px,7vw,95px) clamp(28px,7vw,110px) clamp(65px,8vw,110px);min-height:0}
+.contact-layout{max-width:1180px;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(45px,6vw,90px);align-items:center}
+.contact-panel{max-width:none}
+.contact-kicker{font-size:10px;letter-spacing:.14em;margin:0 0 22px}
+.contact-panel h1{font-size:clamp(44px,5.4vw,76px);margin:0 0 26px;line-height:1}
+.contact-introduction{font-size:clamp(18px,1.8vw,23px);line-height:1.55;max-width:430px;margin:0 0 38px;color:var(--gray)}
+.contact-panel .contact-email{display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:'Archivo',Arial,sans-serif;font-size:clamp(17px,2vw,27px);line-height:1.4;letter-spacing:-.025em;text-decoration:none;padding:8px 0 20px;border-bottom:1px solid #d9dfe14d;width:100%}
+.contact-email>span:first-child{overflow-wrap:anywhere;min-width:0}
+.contact-arrow{font-size:30px;flex:none}
+.contact-panel .media-label{margin-top:34px;margin-bottom:6px}
+.contact-panel .contact-social{display:grid;grid-template-columns:1fr;gap:0;margin-top:0}
+.contact-social a{display:flex;align-items:center;gap:13px;min-height:52px;padding:13px 0;border-bottom:1px solid #d9dfe12b;text-decoration:none;font-size:12px;letter-spacing:.08em}
+.contact-social svg{width:18px;height:18px}
+.contact-social .media-arrow{margin-left:auto;font-size:19px;color:var(--muted)}
+.contact-social a:hover,.contact-email:hover{color:#fff}
+.contact-landscape{width:100%;max-width:470px;aspect-ratio:4/5;justify-self:end}
+@media(max-width:850px){.contact-layout{grid-template-columns:1fr;gap:45px;max-width:600px}.contact-panel{width:100%}.contact-landscape{justify-self:start;max-width:none;aspect-ratio:4/3}.contact-introduction{max-width:500px}}
+@media(max-width:480px){.contact-page{padding:48px 26px 65px}.contact-panel h1{font-size:48px}.contact-introduction{font-size:18px;margin-bottom:30px}.contact-panel .contact-email{font-size:18px}.contact-kicker{font-size:9px}.contact-landscape{aspect-ratio:1}}

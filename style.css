@@ -204,3 +204,11 @@ body{color:var(--gray)}
 .release-card{grid-template-columns:225px minmax(0,1fr)}
 .release-cover{width:225px}
 @media(max-width:600px){.release-card{grid-template-columns:126px minmax(0,1fr)}.release-cover{width:126px}}
+
+/* Music opening mirrors the Home introduction. */
+.music-opening{background:var(--blue);color:var(--gray);padding:95px clamp(28px,8vw,140px) 110px}
+.music-opening-inner{max-width:1220px;margin:auto;display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(50px,8vw,120px);align-items:center}
+.music-opening-copy h1{font-family:'Archivo',Arial,sans-serif;font-size:clamp(35px,4.4vw,64px);font-weight:600;letter-spacing:-.045em;line-height:1.08;text-transform:uppercase;margin:24px 0 0;overflow-wrap:anywhere}
+.music-performance{margin:0;width:100%}
+.music-performance img{display:block;width:100%;height:auto}
+@media(max-width:820px){.music-opening-inner{grid-template-columns:1fr;gap:42px}.music-opening{padding:65px 28px 75px}.music-opening-copy h1{margin-top:15px}.music-performance{max-width:680px}}

@@ -14,3 +14,5 @@ The six release covers (`flower.jpg`, `nagori.jpg`, `dream-book.jpg`, `lycaenida
 
 - `personal-statement-score.png` — the score page beside the home page personal note
 - `contact-landscape.jpg` — mountain photograph on Contact
+
+- `music-performance.png` — piano performance image in the dark blue Music opening section

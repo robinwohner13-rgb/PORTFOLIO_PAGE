@@ -291,3 +291,8 @@ body{color:var(--gray)}
 @media(max-width:850px){.contact-landscape img{aspect-ratio:4/3}}
 @media(max-width:700px){.home-feature{grid-template-columns:1fr;gap:35px;padding:50px 28px 65px}.home-copy{padding-top:0;max-width:520px}.home-copy h1{font-size:58px}.home-statement{max-width:520px}.home-portrait{justify-self:start;max-width:380px}.site-footer{padding:20px 28px}}
 @media(max-width:480px){.contact-landscape img{aspect-ratio:1}}
+
+/* Piano keys mark the blue-to-silver transition. */
+.piano-transition{height:64px;width:100%;background:var(--paper);overflow:hidden;border-top:1px solid #c8cfd240}
+.piano-transition svg{display:block}
+@media(max-width:600px){.piano-transition{height:48px}.piano-transition svg{height:64px;transform:scaleY(.75);transform-origin:top}}

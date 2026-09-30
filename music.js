@@ -21,7 +21,7 @@ document.querySelectorAll('.release-card').forEach((card, index) => {
     });
     if (!opening) return;
     const iframe = document.createElement('iframe');
-    iframe.src = 'https://open.spotify.com/embed/album/' + encodeURIComponent(albumId);
+    iframe.src = 'https://open.spotify.com/embed/album/' + encodeURIComponent(albumId) + '?theme=0';
     iframe.title = title + ' — Spotify player';
     iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
     const link = document.createElement('a');

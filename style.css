@@ -298,3 +298,14 @@ body{color:var(--gray)}
 /* Small biography link beneath the home introduction. */
 .home-about-link{display:inline-flex;align-items:center;gap:16px;margin-top:8px;padding:5px 0;font-size:11px;line-height:1.5;letter-spacing:.03em;color:var(--muted);text-decoration:none;border-bottom:1px solid #aebbc34d}
 .home-about-link:hover{color:var(--gray);border-bottom-color:currentColor}
+
+/* Live performance on About. */
+.about-concert{max-width:1180px;margin:clamp(65px,8vw,100px) auto 0;padding-top:30px;border-top:1px solid #d9dfe12b}
+.about-concert-heading{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:20px}
+.about-concert-heading h2{font-family:'Newsreader',Georgia,serif;font-size:clamp(26px,3vw,36px);font-weight:400;line-height:1.2;letter-spacing:-.02em;margin:0}
+.about-concert-heading a{font-size:11px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.about-concert-heading a:hover{color:var(--gray);text-decoration:underline}
+.about-concert-player{width:100%;aspect-ratio:16/9;background:#050e16}
+.about-concert-player iframe{display:block;width:100%;height:100%;border:0}
+.about-concert-caption{font-size:10px;letter-spacing:.03em;color:var(--muted);margin:12px 0 0}
+@media(max-width:480px){.about-concert-heading{gap:12px}.about-concert-heading a{font-size:10px}}

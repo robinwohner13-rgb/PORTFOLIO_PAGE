@@ -1,11 +1,11 @@
 # Editing the portfolio
 
-Edit these files directly in this repository; each commit updates this version.
+- **Biography, contact, labels:** edit `index.html`.
+- **Colours and layout:** edit the variables and rules in `style.css`.
+- **Images:** use files in `images/`; update image paths and alt text if replacing them.
+- **Releases:** each `.release` article in `index.html` has its Spotify album ID in `data-album`, its cover image, date, title and direct Spotify link. Give each new player a unique `id` and match the cover button's `aria-controls`.
+- **Concert:** update the YouTube link in `index.html` and the embed video ID in `music.js` together. The concert poster uses `images/music-performance.png`.
+- **Player behaviour:** `music.js` opens one Spotify embed at a time and loads the concert embed only on a visitor's click.
+- **Old page links:** `about.html`, `music.html`, `contact.html` and `film.html` redirect into the homepage.
 
-- `index.html` — landing page. Replace `images/portrait-home.jpg` to change the formal portrait. The personal note beneath the introduction can be edited in `index.html`. `images/personal-statement-score.png` is the score displayed beside it.
-- `contact.html` — email, Instagram, Spotify, Apple Music, YouTube Music and `images/contact-landscape.jpg`.
-- `film.html` — each film is one `<article class="film-card">` block. Copy it to add a project, then replace title, year, director, music credit, image path and alt text. Put the corresponding still in `images/`. To link the still, change the image container `<div>` to an `<a href="YOUR_URL">` and its closing tag to `</a>`.
-- `music.html` — six Spotify releases. For a new release, copy a card and update the cover filename, title, month and year, release type, track count, and `data-spotify-uri="spotify:album:ALBUM_ID"`. The small play button is controlled by `music.js`. Spotify controls the stream and may require a signed-in listener or a second interaction. Its iframe API does not guarantee a chosen start time within a music track. For precise excerpts, add authorized audio files and a dedicated local player.
-- `style.css` — colors, spacing and typography.
-
-`images/README.md` lists image filenames. GitHub stores each edit in this repository.
+Preview with `python3 -m http.server 8000` and visit http://localhost:8000.
